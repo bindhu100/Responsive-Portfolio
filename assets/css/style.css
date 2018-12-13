@@ -1,0 +1,389 @@
+html{
+    position: relative;
+   
+}
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #ffffff;
+    background-image: url("../images/concrete_seamless.png");
+    /*padding-top: 102px;*/   
+}
+
+h1 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 2em;
+}
+
+/* to remove link underline points */
+a{
+    text-decoration: none;
+}
+
+h1 h2{
+    font-size: 2em;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+/* header */
+header{
+    
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff;
+    /*position: fixed;*/
+    top: 0;
+    /*z-index: 1;*/
+    left: 0;
+    /*margin: -1px;*/
+    margin-top: -8px; 
+   
+}
+
+
+
+/* header frame */
+  header .header-container{  
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+.header-name, .nav{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* space between Bindhu(logo) and menu */
+ .header-name{ 
+    width: 50%;
+}
+
+
+/* Bindhu(logo) specificatio */
+.logo-name{ 
+    display: inline-block; 
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 1em;
+    width: auto;
+    margin-left: 60px; 
+}
+
+
+.nav{ 
+    width: auto;
+    text-align: right;
+    color: #dddddd;
+    font-weight: normal;
+    margin-left: 23%;
+
+}
+
+.nav ul li  {
+    display: inline-block;
+    padding-left: 1em;
+    
+}
+
+
+
+/* header menu color change while hover */
+.nav ul li a{
+    color: #cccccc;
+    text-decoration: none;
+    -webkit-transition: color .1s;  /*delay (in seconds) for the transition effect*/
+    transition: color .1s;   /*delay (in seconds) for the transition effect*/
+}
+
+
+/* :hover - change font color to  #4aaaa5 */
+.nav ul li a:hover{
+    color: #4aaaa5;
+}
+
+/* on click -menu color change to black(active page) */
+.nav ul li a.Active{
+    
+    color:  black;
+}
+
+
+/* divider(|) between menu*/
+li+li{
+    border-left: 1px solid #cccccc;
+}
+
+
+
+/* content section */
+.content{
+width: 960px;
+clear: both;
+margin: 0 auto;
+}
+
+/* main content */
+.main{
+    display: inline-block;
+    width: 960px;
+    margin: 60px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+
+
+/* About Me */
+.main h1{
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 3px solid #dddddd;
+    
+}
+
+/* paragraph - About Me*/
+.main p{
+    font-size: 18px;
+    margin-bottom: 2em;
+    color: #777777;
+    line-height: 1.5em;
+   
+    
+}
+
+.image-text{
+    float: left;
+    padding: 0 1em 0 0em;
+    width: 200px;
+    
+}
+
+/* Footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    color: #cccccc;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+}
+
+
+
+
+/* *********************************** */
+/* ********* PORTFOLIO PAGE ********** */
+/* *********************************** */
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.style{
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+}
+.text{
+    position: absolute;
+   background-color: #4aaaa5;
+   color: #ffffff;
+   bottom: 20px;
+   margin: 0;
+   height: 55px;
+   width: 300px;
+   text-align: center;
+   padding: 0; 
+}
+
+
+
+
+/* image grow */
+.column {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(-10rem);
+    backface-visibility: hidden;
+    transition-duration: 0.1s;
+    transition-property: transform;
+}
+
+/* image grow action*/
+.column:hover,
+.column:focus,
+.column:active {
+    
+    transform: scale(1.1);
+    box-shadow: inset 0 0 10px #4aaaa5;
+}
+
+
+
+/* ************************************* */
+/* *********** CONTACT PAGE ************ */
+/* ************************************* */
+
+
+/* contact form container specifications */
+.contact-form{
+width: 550px;
+}
+
+/* for label name */
+.contact-form label{
+    display: block;
+    padding-bottom: 0.5em;
+    color: #777777;  
+}
+
+/* input area and text area */
+ input[type=text], textarea{  
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+   
+}
+
+/* submit button */
+input[type=submit]{
+    background-color: #4aaaa5;
+    color:  #ffffff;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* color change while hover */
+input[type=submit]:hover{
+    background-color: #32D1CE;
+    
+}
+/* on click- font color font weight will change  */
+
+input[type=submit]:active{
+    color: #80151B;
+    font-weight: bold;
+    
+}
+
+/* media screen */
+
+@media screen and (max-width: 980px){
+
+    .header-container {
+        width: 100%;
+       
+    }
+
+    .header-name{
+        width: 100%;
+    }
+    .logo-name{
+        /*width: 20%;*/
+        position: relative;
+    }
+    .nav{
+        /*width: 50%;*/
+        position: absolute;
+        margin-left: 475px;
+        display: inline;
+    }
+
+    .content{
+        width: 75%;
+    
+        padding-right: 50px;
+        margin-right: 100px;
+        
+    }
+
+    .main{
+        width: 100%;
+    }
+    .aboutme{
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+    }
+
+    ul{
+        margin: -50px;
+        margin-left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .nav{
+        /*width: 50%;*/
+        position: absolute;
+        margin-left: 285px;
+        display: inline;
+    }
+
+    ul{
+        margin: -50px;
+        margin-left: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 640px){
+
+    .nav{
+        /*width: 50%;*/
+        position: absolute;
+        margin-left: 180px;
+        display: inline;
+    }
+
+    ul{
+        margin: -50px;
+        margin-left: 100px;
+    }
+
+
+
+}
