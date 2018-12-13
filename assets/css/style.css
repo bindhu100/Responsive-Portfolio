@@ -366,9 +366,20 @@ input[type=submit]:active{
         margin: -50px;
         margin-left: 100px;
     }
+    #name, #email, #message{
+        width: 65%
+    }
+     
+    #submit{
+        margin-left: -361px;
+        font-size: 11px;
+    }
 
+    #message{
+    margin-bottom: 40px;
+
+    }
 }
-
 
 @media screen and (max-width: 640px){
 
@@ -383,7 +394,17 @@ input[type=submit]:active{
         margin: -50px;
         margin-left: 100px;
     }
+    #name, #email, #message{
+        width: 60%;
+    }
+     
+    #submit{
+        margin-left: -334px;
+        font-size: 11px;
+    }
 
+    #message{
+        margin-bottom: 40px;
 
-
+    }
 }
